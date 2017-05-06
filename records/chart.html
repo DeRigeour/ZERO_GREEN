@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="StarterApp">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="chartjs/angular-chart.css">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+  <script src="chartjs/Chart.js"></script>
+  <script src="chartjs/angular-chart.js"></script>
+  <script src="js/index.js"></script>
+  
+
+</head>
+
+
+<body layout="row" >
+
+<div ng-controller="AppCtrl">
+<tr>
+ <td> <canvas id="doughnut" chart-options="options" class="chart chart-doughnut"
+        chart-data="data" chart-labels="labels"></canvas> </td>  
+</tr>
+
+
+</div>
+</body>
+</html>
